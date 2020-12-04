@@ -12,7 +12,7 @@ while(loop){
   var date = parseInt(DOB.slice(0,2));
   var mon = parseInt(DOB.slice(3,5));
    
-   if( date.toString().length === 2 && mon.toString().length <= 2 && year.toString().length === 4 ){
+   if( date.toString().length <= 2 && mon.toString().length <= 2 && year.toString().length === 4 ){
        if(!isNaN(date) && !isNaN(mon) && !isNaN(year)){
           loop = false;
            if( year % 100 === 0 ){
